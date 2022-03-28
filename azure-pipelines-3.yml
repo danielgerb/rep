@@ -31,8 +31,4 @@ steps:
     failBuildForNewVulnerabilitiesEnabled: true
     failBuildForNewVulnerabilitiesSeverity: 'MEDIUM'
     enableDependencyScan: false
-    enableProxy: false
-    enableSastScan: true
-    CheckmarxService: 'new connection'
-    fullTeamName: 'CxServer'
-    enableDependencyScan: false
+   
