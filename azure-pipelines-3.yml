@@ -21,6 +21,16 @@ steps:
 - task: Application security testing@2022
   inputs:
     projectName: 'Daniel_Test_Pipeline'
+- task: Application security testing@2022
+  inputs:
+    projectName: 'daniel'
+    enableProxy: false
+    enableSastScan: true
+    CheckmarxService: 'new connection'
+    vulnerabilityThreshold: true
+    failBuildForNewVulnerabilitiesEnabled: true
+    failBuildForNewVulnerabilitiesSeverity: 'MEDIUM'
+    enableDependencyScan: false
     enableProxy: false
     enableSastScan: true
     CheckmarxService: 'new connection'
