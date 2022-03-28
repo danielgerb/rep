@@ -23,10 +23,10 @@ steps:
     projectName: 'Daniel_Test_Pipeline'
 - task: Application security testing@2022
   inputs:
-    projectName: 'daniel'
-    enableProxy: false
+    enableProxy: true
     enableSastScan: true
     CheckmarxService: 'new connection'
+    fullTeamName: 'CxServer'
     vulnerabilityThreshold: true
     failBuildForNewVulnerabilitiesEnabled: true
     failBuildForNewVulnerabilitiesSeverity: 'MEDIUM'
