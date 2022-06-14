@@ -17,3 +17,12 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+- task: Application security testing@2022
+  inputs:
+    projectName: 'danielgerb.rep'
+    enableProxy: false
+    enableSastScan: true
+    CheckmarxService: 'SAST connection'
+    engineConfigId: '6'
+    fullTeamName: 'CxServer'
+    enableDependencyScan: false
